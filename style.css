@@ -1,0 +1,378 @@
+html
+{
+	font-size: 100%;
+	font-family: Arial, sans-serif;
+}
+	
+body
+{
+	font-size: 62.5%;
+}
+	
+html, body, header, nav, article, footer
+{
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+img
+{
+	border: 0;
+}
+	
+#wrapper
+{
+	margin: auto;
+}
+	
+header
+{
+	text-transform: lowercase;
+	color: grey;
+}
+	
+header img
+{
+	float: left;
+	padding-right: 2em;
+	width: 25%;
+}
+	
+header h1, header h2, header h3
+{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+	
+.blue
+{
+	color: #00A7A1;
+}
+	
+.pink, article h1, article h2, article h3
+{
+	color: #ED6BA6;
+}
+
+nav
+{
+	text-align: center;
+}
+	
+nav ul li
+{
+	list-style-type: none;
+	font-size: 2.5em;
+	text-transform: lowercase;
+}
+	
+nav a:link, nav a:visited, article a:link, article a:visited
+{
+	color: #00A7A1;
+	text-decoration: none;
+}
+	
+nav a:hover, article a:hover
+{
+	color: #FFC900;
+}
+	
+article
+{
+	font-size: 1.8em;
+}
+
+article h1
+{
+	font-size: 1.5em;
+}
+
+article h2
+{
+	font-size: 1.2em;
+}
+
+article h3
+{
+	font-size: 0.8em;
+}
+	
+footer
+{
+	clear: both;
+	text-align: center;
+}
+
+/**
+* Responsive elements for desktops)
+**/
+@media screen and (min-width: 1025px)
+{
+	#wrapper
+	{
+		max-width: 960px;
+	}
+
+	header h1
+	{
+		font-size: 6.7em;
+	}
+	
+	header h2
+	{
+		font-size: 4.5em;
+	}
+	
+	header h3
+	{
+		font-size: 5em;
+		text-align: center;
+	}
+	
+	nav
+	{
+		clear: both;
+		width: 100%;
+	}
+	
+	nav ul
+	{
+		width: 80%;
+		height: 1.5em;
+		margin: auto;	
+		padding-top: 1.5em;
+		padding-bottom: 0.5em;
+	}
+	
+	nav ul li
+	{
+		display: inline-block;
+		float: left;
+		width: 14%;
+		padding-left: 1%;
+		padding-right: 1%;
+	}
+	
+	article
+	{
+		clear: both;
+	}
+	
+	.product
+	{
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.product img
+	{
+		width: 100%;
+	}
+
+	.prod_img
+	{
+		width: 10%;
+	}
+
+	.prod_buy
+	{
+		width: 10%;
+	}
+
+	.prod_desc
+	{
+		width: 75%;
+		padding-left: 2%;
+	}
+}
+
+/**
+* Responsive elements for small devices (tablets)
+**/
+@media screen
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)
+{
+	#wrapper
+	{
+		width: 767px;
+	}
+
+	header
+	{
+		width: 50%;
+		height: 20em;
+		float: left;
+	}
+
+	header h1
+	{
+		font-size: 3.6em;
+	}
+	
+	header h2
+	{
+		font-size: 2.4em;
+	}
+	
+	header h3
+	{
+		font-size: 5em;
+		text-align: center;
+	}
+	
+	.contact, .phone
+	{
+		display: block;
+	}
+	
+	.phone
+	{
+		letter-spacing: 0.1em;
+	}
+	
+	header img
+	{
+		padding: 2%;
+		width: 95%;
+		/*display: none;*/	
+	}
+	
+	nav
+	{
+		width: 50%;
+		/*height: 20em;*/
+		float: right;
+	}
+	
+	nav ul
+	{
+		width: 80%;
+		height: 1.5em;
+		margin: auto;	
+		padding-top: 1.5em;
+		padding-bottom: 0.5em;
+	}
+	
+	nav ul li
+	{
+		display: inline-block;
+		float: left;
+		width: 35%;
+		padding-left: 1%;
+		padding-right: 1%;
+		list-style-type: none;
+		font-size: 2.5em;
+		text-transform: lowercase;
+	}
+	
+	article
+	{
+		float: right;
+		width: 50%;
+	}
+	
+	.product
+	{
+		display: inline-block;
+	}
+	
+	.product img
+	{
+		width: 100%;
+	}
+
+	.prod_img
+	{
+		display: none;
+	}
+
+	.prod_buy
+	{
+		width: 25%;
+		padding-top: 2em;
+	}
+
+	.prod_desc
+	{
+		width: 70%;
+		padding-left: 2%;
+		vertical-align: top;
+	}
+	
+	footer
+	{
+		clear: both;
+	}
+}
+
+/**
+* Responsive elements for extra-small devices (phones)
+**/
+@media screen
+and (min-device-width : 320px) 
+and (max-device-width : 480px)
+{
+	#wrapper
+	{
+		width: 320px;
+		margin: auto;
+	}
+	
+	header, nav, nav ul, nav ul li, article
+	{
+		width: 100%;
+		clear: both;
+	}
+	
+	header
+	{
+		height: auto;
+	}
+	
+	header h1
+	{
+		font-size: 5em;
+	}
+	
+	header h2
+	{
+		font-size: 3.5em;
+	}
+	
+	.location
+	{
+		display: block;
+	}
+	
+	header h3
+	{
+		font-size: 4.2em;
+		text-align: center;
+	}
+	
+	header img
+	{
+		display: none;	
+	}
+	
+	nav ul
+	{
+		padding: 0;
+		margin: 0;
+	}
+	
+	nav ul li
+	{
+		display: block;
+		padding: 0;
+		margin: 0;
+	}
+	
+	article
+	{
+		display: hidden;
+	}
+}
